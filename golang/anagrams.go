@@ -9,10 +9,10 @@ import "fmt"
 func isAnagram(str1 string, str2 string)  bool {
     var charSet = make(map[string]int)
     for _, c := range str1 {
-        charSet[string(c)] += 1
+        charSet[string(c)] ++
     }
     for _, c := range str2 {
-        charSet[string(c)] -= 1
+        charSet[string(c)] --
     }
     for _, val := range charSet {
         if val != 0 {
