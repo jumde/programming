@@ -2,9 +2,7 @@
 
 using namespace std;
 
-bool isEqual(int a, int b) {
-  return !(a ^ b);
-}
+bool isEqual(int a, int b) { return !(a ^ b); }
 
 int main() {
   cout << "isEqual (8, 8): " << isEqual(8, 8) << "\n";
